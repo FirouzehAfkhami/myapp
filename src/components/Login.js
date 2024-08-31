@@ -28,7 +28,7 @@ function Login() {
           </div>
         </div>
         <div className="right">
-        <button type="submit">Login</button> 
+hkhkhhjkhhkhkhkhkkk
           <p>This is some content in the right div.</p>
         </div>
       </div>
