@@ -28,7 +28,9 @@ function Login() {
           </div>
         </div>
         <div className="right">
-          <h1>Welcome to the Right Div</h1>
+ <h2>This is some content in the right div.orem3 </h2>
+
+
           <p>This is some content in the right div.</p>
         </div>
       </div>
