@@ -1,0 +1,29 @@
+/* Container for the three columns */
+.container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Distribute space between columns */
+    padding: 20px; /* Add some padding around the container */
+    gap: 20px; /* Add space between columns */
+    height: auto;
+  }
+ 
+  
+  /* Style each column */
+  .column {
+    flex: 1; /* Allow columns to grow and shrink as needed */
+    background: #f1f1f1; /* Light background for each column */
+    padding: 20px; /* Padding inside each column */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    border-radius: 8px;
+    height: auto; /* Optional: Round corners */
+  }
+  
+  /* Ensure text is centered and readable */
+  .column h2 {
+    margin-top: 0; /* Remove top margin for headings */
+  }
+  
+  .column p {
+    margin-bottom: 0; /* Remove bottom margin for paragraphs */
+  }
+  

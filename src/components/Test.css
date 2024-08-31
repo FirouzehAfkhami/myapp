@@ -1,0 +1,90 @@
+/* Apply box-sizing to all elements for consistent sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background: linear-gradient(to right, #213a21 ,#567256); /* Green gradient */
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  height: 80%;
+}
+
+article {
+  float: left;
+  width: 70%;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - stack the columns on small screens */
+@media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      float: none;
+  }
+}
+p {
+  transition: transform 0.3s ease; /* Smooth transition for transformation */
+  color: #090909; /* Initial text color */
+}
+
+p:hover {
+  transform: scale(1.1); /* Scale the text size by 10% on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+/* Remove default list styling */
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+  margin: 0; /* Ensure no margin around list items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set text color, adjust as needed */
+  display: block; /* Make the link a block element for padding */
+  padding: 8px; /* Add padding for clickable area */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+  color: #ccc; /* Change text color on hover */
+}
+

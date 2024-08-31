@@ -1,0 +1,51 @@
+/* Ensure the body and html take up full height */
+.full-screen-container {
+    position: relative;
+    width: 100%;
+    height: 80%; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Style for the image container */
+  .image-container {
+    flex: 1; /* Takes up 1 part of the container */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Ensure the image can be positioned inside */
+  }
+  
+  /* Ensure the image fits the container */
+  .image-container img {
+    max-width: 100%; /* Make the image width fit within the container */
+    max-height:80%; /* Make the image height fit within the container */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    display: block; /* Remove default inline spacing */
+  }
+  /* Content container styling */
+  .content {
+    flex: 1; /* Takes up the remaining part of the container */
+    padding: 20px; /* Add padding for better readability */
+    background-color: #f1f1f1; /* Light background color for content area */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+  }
+  
+  /* Content header styling */
+  .content h1 {
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Content paragraph styling */
+  .content p {
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack image and content vertically on small screens */
+    }
+  }
+  

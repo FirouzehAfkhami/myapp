@@ -1,0 +1,24 @@
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;     /* Center the icons vertically (if needed) */
+    gap: 15px;               /* Space between the icons */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #f39c12; /* Change the color on hover */
+  }
+  

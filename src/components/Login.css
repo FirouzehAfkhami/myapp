@@ -1,0 +1,123 @@
+/* Style for the header section */
+.login-header {
+    text-align: center; /* Center align text */
+    margin: 20px 0; /* Space above and below the header */
+  }
+  
+  .login-title {
+    font-size: 24px; /* Adjust title size */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .login-subtitle {
+    font-size: 14px; /* Adjust subtitle size */
+    color: #555; /* Slightly gray color for subtitle */
+  }
+  
+  /* Style for the form container */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Style for the left section */
+  .left {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 50%;
+  }
+  
+  /* Style for the right section */
+  .right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 50%;
+  }
+  
+  /* Style for the login form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px; /* Space below the form heading */
+  }
+  
+  /* Style for the form elements */
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .login-form label {
+    margin-bottom: 5px;
+  }
+  
+  .login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Full width of the form */
+    box-sizing: border-box;
+  }
+  
+  .login-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the picture */
+  .picture {
+    margin-bottom: 20px; /* Space below the picture */
+  }
+  
+  .picture img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+  }
+  
+  /* Style for the footer */
+  .loginfooter {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  
+  
+  /* Mobile view styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left, .right {
+      width: 100%;
+      margin-bottom: 20px; /* Add space between the sections */
+    }
+  
+    .right {
+      margin-bottom: 0; /* No margin for the last item */
+    }
+  }
+  

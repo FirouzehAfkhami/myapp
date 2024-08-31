@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .two-column {
+      flex-direction: column;
+    }
+  
+    .two-column > div {
+      margin: 0 0 20px 0;
+    }
+  }

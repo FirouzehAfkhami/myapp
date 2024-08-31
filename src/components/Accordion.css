@@ -1,0 +1,38 @@
+/* Accordion container */
+.accordion {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the accordion */
+  }
+  
+  /* Style for accordion items */
+  .accordion-item {
+    margin: 10px 0;
+  }
+  
+  /* Style for the accordion button */
+  .accordion-button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button.active,
+  .accordion-button:hover {
+    background-color: #e0e0e0; /* Change color on hover or active state */
+  }
+  
+  /* Style for the accordion content */
+  .accordion-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none; /* No border on top of content */
+    background-color: #fff;
+  }
+  
